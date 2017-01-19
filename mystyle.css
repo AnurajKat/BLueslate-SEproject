@@ -1,0 +1,529 @@
+html{
+    width:100%;
+    height:90%;
+    overflow:auto;
+}
+
+/*       login page css      */
+body.loginpage{
+      background-color: #133433;
+     font-family:monospace ;
+     
+    }
+   
+    p.loginf{
+      text-align: center;
+      font-size: 250%;
+      font-family: sans-serif;
+      color:#17DCD5;
+    }
+a{
+    
+    transition:all 0.3s ease-in-out;
+}
+    a:link {
+        color: #00BFA5;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:visited {
+        color: #E0F7FA;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #A7FFEB;
+        background-color: transparent;
+        text-decoration: underline;
+
+    }
+    a:active {
+        color:#E0F2F1;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    p.newp{
+      font-size: 250%;
+
+    }
+    h1.logoname{
+
+      padding-top:75px;
+     text-shadow: 0px 0px 1px #030808;
+      border:none;
+      border-radius: 20px;
+      background-color: #165654;
+      text-align:center;
+      padding-bottom: 80px;
+      width:40%;
+      letter-spacing: 2px;
+      font-weight: lighter;
+      font-size: 65px;
+      font-family: Helvetica;
+      color:#17DCD5;
+    }
+    #loginfonts{
+        font-family: sans-serif;
+        font-size: 25px;
+        font-weight: normal;
+        color: #165654;
+        
+    }
+    #makemecenter{
+
+        border:none;
+    }
+
+    input[placeholder],[placeholder],*[placeholder]
+    {
+        color:#E0F7FA !important;
+    }
+
+    input{
+            border: none;
+            font-size: 25px;
+            border-bottom: solid;
+            border-width: 1px;
+            border-color: #E0F2F1; 
+            background-color: transparent;
+            padding :2px 2px 0px 3px;
+            color:#165654;
+        text-shadow: 0px 0px 2px #030808;
+            text-align: left;
+        transition : all 0.3s ease-in-out;
+    }
+    input:focus{
+        border-bottom-color:#00BFA5;
+        border-bottom-width: 2px;
+        border: transparent;
+       /* border-bottom-color: darkcyan;*/
+        outline:none;
+        color:#165654;
+        text-decoration-color: #165654;
+        border-bottom: solid;
+     /*   border-bottom-width: thin;*/
+      /*  border-color: #E0F2F1; */
+        text-shadow: 0px 0px 2px #030808;
+        
+        transition : all 0.3s ease-in-out;
+    }
+   
+
+    .loginbut{
+        
+        border:none;
+        font-size: 20px;
+        font-family: sans-serif;
+        background-color:#165654; /*transparent;*/
+        margin:8px 0;
+        padding:14px 50px;
+        color: #A7FFEB;
+        text-shadow: 0px 0px 1px #030808;
+        box-shadow: 4px 4px 10px #071212; 
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+    .loginbut:hover{
+        -webkit-transition:all 0.3s ease-in-out;
+        background-color:#7DBFB0; /*#A7FFEB;/*#165654;*/
+        color: #030808;/*#17DCD5;*/
+        text-shadow: 0px 0px 2px #030808;
+        box-shadow: 0px 2px 10px 5px #E0F2F1; 
+        outline:none;
+    }
+    .loginbut:active{
+        background-color:#A7FFEB;
+        -webkit-transition: all 0.3s ease-in-out;
+        color:#165654;
+        box-shadow: none;
+        outline:none;
+        text-shadow: 0px 0px 2px #030808;
+    }
+    .loginbut:focus{
+       /* box-shadow: none;*/
+        outline:none;
+        text-shadow: 0px 0px 2px #030808;
+    }
+
+
+/*          Welcome page css        */
+
+
+body.welcome{position:fixed;
+        margin-top: 80px;
+        width: 100%;
+        background-color: #7DBFB0;
+    
+        font-family: Helvetica;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        
+        background-blend-mode: darken;
+     /*padding: -10px -10px -10px -10px;*/
+    }
+/*      title bar   */
+
+    h2.TitletoDaLeft{
+        position:fixed;
+        border: none;
+        font-family: Helvetica;
+        font-size: 35px;
+        font-stretch: expanded;
+        font-weight: bold;
+        padding-left: 0.5%;
+        letter-spacing: 3px;
+        padding-top: 0px;
+        opacity:0.7;
+        text-shadow: 0px 0px 2px #030808;
+       /* background-color: #165654;*/
+        color:#17DCD5;
+        text-rendering: optimizeLegibility;
+      /* -webkit-font-smoothing:antialiased;*/
+    }
+
+div.titlebar{
+    position:fixed;
+    height: 80px;
+    width:99%;
+    opacity: 0.9;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-left: 15px;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color:  #165654;
+}
+    /*      navigation sidebar  */
+.sidenav{
+    margin-top: 105px;
+    position:fixed;
+    height:100%;
+    
+    background-color:  #061919;
+    height:100%;
+    width:200px;      /*175px;*/
+    z-index:1;
+    top:0;
+    left:0;
+    
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+.sidenav a{
+    text-align: center;
+    padding:8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #228886;
+    display: block;
+    transition: 0.5s;
+    
+}
+#userName{
+    position:relative;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 23px;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 10px;
+    color:#228886;
+    opacity:0.95;
+    text-shadow: 0px 0px 1px #030808;
+    text-rendering: optimizeLegibility;
+    /*-webkit-font-smoothing:antialiased;*/
+    
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color:#32C8C5;
+}
+    /*  for animataion of open and close    removed  */
+.sidenav .closebtn{
+    text-align: right;
+    position:absolute;
+    top: 0;
+    right:5px;
+    font-size: 29px;
+}
+@media screen and (max-height:450px){
+    .sidenav{padding-top:15px;}
+    .sidenav a{ font-size:18px;}
+}
+.openbut{
+    border:none;
+        font-size: 20px;
+        font-family: sans-serif;
+        background-color: #061919;
+        opacity:0.9;
+        outline:none;
+         -webkit-transition: all 0.25s ease-in-out;
+}
+ .openbut:hover{
+        -webkit-transition: all 0.25s ease-in-out;
+        opacity:0.6;
+        outline:none;
+    }
+    .openbut:active{
+        -webkit-transition: all 0.25s ease-in-out;
+        outline:none;
+    }
+    .openbut:focus{
+       }
+div.menuicon{
+    width:25px;
+    height:3px;
+    background-color: #030808;
+    margin:6px 0;
+}
+
+/*  displaying other pages  */
+div.mainframe{
+    
+    position:fixed;
+    margin-top: 105px;
+    margin-left: 10px;
+    
+    height:84.4%;
+    margin-bottom: 0px;
+    width:99%;
+    background: transparent;
+}
+iframe{
+    margin-left:200px;
+    border:none;
+    overflow: scroll;
+    height: inherit;
+    /*height:100%;*/
+    position:inherit;
+    width:85%;
+}
+/*  logout  */
+.logoutl{
+    border :2px solid white;
+    border-radius: 50%;
+    border-left:2px solid white;
+    border-right:2px solid white;
+   border-top: none;
+     border-bottom: 2px solid white;
+    width:20px;
+    height:20px;
+}
+
+    
+/*      motivational quote or home page     */
+
+body.homie{
+    background: transparent;
+    border:none;
+}
+h1.quoteunquote {
+    border:transparent;
+    padding-top:50px;
+    padding-left: 10px;
+    background: transparent;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    color: #165654;
+    text-align:center;
+    text-rendering: optimizeLegibility;
+    text-shadow:rgba(0,0,0,.01), 0 0 1px;
+}
+
+/*        Academics              */  
+
+body.cantEven{
+    position: inherit;
+    
+    margin-top: 0px;
+    width:99.25%;
+    height:100%;
+    background:transparent;
+    border:none;
+}
+
+/*  cards   */
+button.bttncard{
+    border:none;
+    background: transparent;   
+}
+.text_card{
+    font-size: 15px;
+    font-family: monospace;
+    transition: all 0.2s ease-in-out;
+}
+.text_heading_card{
+    font-size: 25px;   
+    font-weight:bold;
+    color: #030808;
+    font-family: monospace;
+    text-align: center;
+}
+textarea {
+    outline: none;
+    transition: all 0.1s ease-in-out;
+}
+.cards{
+    /*overflow:auto;*/
+    position: relative;
+    margin-left: 5px;
+    margin-right:1px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-top:15px;
+    padding-top: 20px;
+    border:none;
+    text-align: center;
+    
+    width:97%;
+    height:225px;
+    outline:none;
+    /*padding: 5px 5px 5px 5px;*/
+    box-shadow: 3px 3px 8px #030808;
+    background-color: #228886;/*aquamarine;*/
+    color:#030808;/* #17DCD5; /* #165654;*/
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+.cardcontainer{
+    padding-left: 5px;
+    padding-top: 0px;
+    display: inline;
+    width:100%;
+    height: 100%;
+}
+.cards:hover{
+    box-shadow: 3px 3px 15px #030808;
+    outline:none;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+.cards:active{
+    box-shadow: 1px 1px 5px #030808;
+    -webkit-transition:all 0.1s ease-in-out:
+}
+.cards_font{
+    text-align: center;
+    font-family:monospace;
+    background:transparent;
+}
+
+/***        Mainpage_faculty css  ***/
+
+.nameisname{
+    color:#00BFA5;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+#upcoming_event_title{
+    color:#133433;
+    border: none;
+    font-family: Helvetica;
+    font-size: 25px;
+    font-stretch: expanded;
+    font-weight: bold;
+    padding-left: 0.5%;
+    letter-spacing: 3px;
+    padding-top: 0px;
+    opacity:0.7;
+    text-shadow: 0px 0px 2px #030808;
+       /* background-color: #165654;*/
+    text-rendering: optimizeLegibility;
+}
+
+#label_0, #label_1, #label_2{
+    color:#030808;
+    font-family: cursive;
+    border:none;
+    background: none;
+    font-size:15px;
+    transition: all 0.1s ease-in-out;
+     -webkit-transition: all 0.1s ease-in-out;
+}
+#l_0, #l_1, #l_2{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+.subject_list {
+   font-size:15px;
+    text-decoration: none;
+    font-family: monospace;
+    transition: all 0.15s ease-in-out;
+}
+.subject_list:link{
+     color:#133433;
+    text-decoration: none;
+}
+.subject_list:hover {
+    color: #203E3D;
+    text-decoration: none;
+}
+.subject_list:active {
+    color :#011616; 
+    text-decoration: none;
+}
+.subject_list: visited {
+    color: #375C5B;
+    text-decoration: none;
+}
+.cardEvent{
+    position: relative;
+    margin-left: 5px;
+    margin-right:1px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-top:10px;
+    padding-top: 20px;
+    border:none;
+    text-align: center;
+    background-color: #228886;/*aquamarine;*/
+    width:100%;
+    height:150px;
+    outline:none;
+    /*padding: 5px 5px 5px 5px;*/
+    box-shadow: 0px 1px 3px 0 #030808;
+   
+    color:#030808;/* #17DCD5; /* #165654;*/
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+.cardEvent:hover{
+     box-shadow: 0px 4px 5px 0 #030808;
+}
+table {
+    border:none;
+    width: 100%;
+    height:100%;
+    padding-bottom: 3%;
+}
+th {
+    padding: 0px 7px 0px 5px;
+    width:33%;
+}
+th .att{
+    width:100%;
+    padding: 0 0 0 0 ;
+}
+h3.title_name{
+    color: #133433;
+    text-align: center;
+}
+h4.date_content{
+    color:#092625;
+}
+.lefty1{
+    text-align: left;
+}
+.average_attendance{
+     color: #133433;
+    text-align: center;
+    font-size: 18px;
+}
+.average_attendance:hover{
+    text-decoration: none;
+}

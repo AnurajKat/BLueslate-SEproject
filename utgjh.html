@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>Login BlueSlate</title>
+<link rel="stylesheet" href="mystyle.css" />
+<script src="js/papaparse.js"></script>
+<script src="js/jquery-3.1.1.js"></script>
+<script type='text/csv' src="login_Id_students.csv" name="file1"></script>
+<script src="js/myjavascript.js"></script>
+<script type='text/javascript'>
+   /* //////////////////////////////////////////////////////////
+    function checky(data) {
+    "use strict";
+    var uid = document.getElementsByName("uname");
+    var passwd = document.getElementsByName("passwd");
+    if (data.split(',').indexOf(uid) > -1) {
+        if (uid.equals(passwd)) {
+            window.location.href = 'welcomepage.html';
+        } else {
+            window.alert('oops! wrong password');
+        }
+    } else {
+        window.alert("wrong user id");
+    }
+}
+    /////////////////////////////////////////////////////////////
+    function loadFile(url, Callback) {
+    "use strict";
+    Papa.parse(url, { 
+            download : true, 
+            dynamicTyping : true,
+            complete : funnction(results) {
+                window.alert(results.data);
+                Callback(results.data);
+                }
+    });
+    }
+    /////////////////////////////////////////////////
+    function checkLogin() {
+    "use strict";
+    load_file('login_Id_students.csv',checky);
+        }*/
+    function checkLogin() {
+     var data3 =""; 
+     var csvfile='data/login_Id_students.csv';
+    $.get(csvfile, function (data) {
+        var csvdata = Papa.parse(data);
+        data3= csvdata.data;
+        window.alert(data3);
+        console.log(data3);
+        
+        
+    });
+     var passwd = document.getElementsByName("passwd");
+     var uid = document.getElementsByName("uname");
+     //if (data3.split(',').indexOf(uid) > -1) {
+        var valid =0;
+        var data1=data3.split(',');
+        for ( var count = 0 ; count < data1.length; count++) {
+                
+            if(data1[count] === uid) {
+                document.getElementsByName("lel")= data1[count];
+                        if( uid === passwd) {
+                            valid = 1;    
+                            }
+                    valid = 1; 
+                    }
+            }
+        
+    if( valid === 1){
+        window.location.href = 'welcomepage.html';
+    } else {
+        window.alert('login id or password is incorrect.');
+    }
+        /*if (uid === passwd) {
+            window.location.href = 'welcomepage.html';
+        } else {
+            window.alert('oops! wrong password');
+        }
+    } else {
+        window.alert("wrong user id");
+    }*/
+    }
+    
+    
+    </script>
+</head>
+<body class="loginpage">
+  <center>
+        <h1 class="logoname">BlueSlate</h1>
+</center>
+<center>
+    
+    <div >
+    
+      <p class="loginf">
+         <input type="text" id="loginfonts" placeholder="Username" name="uname" required />
+      </p>
+      <p class="loginf">
+      <input type="password" id="loginfonts" placeholder="Password" name="passwd" required/>
+      <!--/center--></p>
+  </div>
+      <label name="lel"></label>
+      <button type="button" class="loginbut" onclick="checkLogin()"><!--"window.location.href='welcomepage.html'"-->Login karo</button>
+      
+   </center>
+    <!--
+<p>
+  <a href="https://material.google.com/style/color.html#color-color-palette" target="iframedemo">color pallete</href>
+</p>
+    
+<iframe  src="" name="iframedemo" height="500" width="1250" id="makemecenter"></iframe>
+-->
+</body>
+</html>
